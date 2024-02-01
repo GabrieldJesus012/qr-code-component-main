@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+
+
+:root{
+    --corWhite: hsl(0, 0%, 100%);
+    --corLightgray: hsl(212, 45%, 89%);
+    --corGrayishblue: hsl(220, 15%, 55%);
+    --corDarkblue: hsl(218, 44%, 22%);
+}
+
+@media screen and (max-width:375px) {
+    .carta {
+        width: 335px;
+        height: 450px;   
+    }
+}
+
+body{
+    background-color: var(--corWhite);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:var(--corLightgray) ;
+}
+
+.carta{
+    width: 380px;
+    height: 590px;
+    background-color: var(--corWhite);
+    border-radius: 4%;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+}
+
+
+#imagem {
+    width: 92%;
+    height: 90%;
+    border-radius: 30px;
+    padding: 15px 15px 15px 15px;
+}
+
+.informação {
+    height: 40%;
+    text-align: center;
+    padding: 10px;
+}
+
+.titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--corDarkblue);
+}
+
+#descrição {
+    color: var(--corGrayishblue);
+    padding: 15px 10px 10px 10px;
+    font-size: 1.3rem;
+}
